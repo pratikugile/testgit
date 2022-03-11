@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html translate="no" class="notranslate">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <title>Login</title>
+    <script>
+      WebSocket = undefined;
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//lib.weshinetech.in/lib/itx/priv/static/external/font-awesome-4.6.1/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//lib.weshinetech.in/lib/itx/priv/static/libs/lib.15.css"
+    />
+    <script
+      src="//lib.weshinetech.in/lib/itx/priv/static/libs/lib.15.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//lib.weshinetech.in/lib/itx-exam-sl/site/static/css/app.18.css"
+    />
+  </head>
+</html>
+<body>
+  <div>
+    <div class="container-fluid">
+      <div><div class="myalert wfid_myalert wfid_temp404030690"></div></div>
+      <div align="center" class="row">
+        <nav class="navbar header">
+          <div class="row">
+            <div class="col-sm-12">
+              <span class="pull-sm-left"></span>
+              <p class="lead font-weight-bold">Online Examination System</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div style="margin-top: 5rem" class="row">
+        <div>
+          <h4 class="mycenter font-weight-bold wfid_temp404030722 h4">
+            Savitribai Phule Pune University
+          </h4>
+          <hr size="1" class="wfid_temp404030754 hr" />
+          <div class="col-sm-4 wfid_temp404030786">
+            <div class="oe2form wfid_temp404030818">
+              <p class="lead font-weight-bold wfid_temp404030850 p">Login</p>
+              <fieldset class="form-group wfid_temp404030882 fieldset">
+                <legend class="legend"></legend>
+                <label class="wfid_temp404030914 nitrogen_label"
+                  >PRN (Permanent Registration Number) *</label
+                ><input
+                  type="text"
+                  autocomplete="off"
+                  class="form-control wfid_username wfid_temp404030946 textbox"
+                  placeholder="PRN (Permanent Registration Number)"
+                  value=""
+                />
+              </fieldset>
+              <fieldset class="form-group wfid_temp404030978 fieldset">
+                <legend class="legend"></legend>
+                <label class="wfid_temp404031010 nitrogen_label"
+                  >Password *</label
+                ><input
+                  type="password"
+                  autocomplete="off"
+                  class="form-control password wfid_password_bcrypt wfid_temp404031042 textbox"
+                  placeholder="Password"
+                  value=""
+                />
+              </fieldset>
+              <fieldset class="form-group wfid_temp404031074 fieldset">
+                <legend class="legend"></legend>
+                <label class="wfid_temp404031106 nitrogen_label"
+                  >Active Tests *</label
+                ><input
+                  type="text"
+                  autocomplete="off"
+                  class="form-control wfid_testsactive wfid_temp404031138 textbox"
+                  style="display: none"
+                  value=""
+                />
+                <div
+                  class="wfid_textbox_pickertestsactive wfid_temp404031170"
+                  style="margin: 0px"
+                ></div>
+                <input
+                  type="button"
+                  value="Select Active Tests"
+                  class="btn btn-sm btn-primary-outline wfid_temp404031202 button"
+                  style="margin-top: 3px"
+                />
+              </fieldset>
+              <div class="wfid_temp404031234">
+                <span
+                  class="wfid_temp404031266"
+                  style="display: inline-block; margin-right: 10px"
+                  ><input
+                    type="button"
+                    value="Login"
+                    class="btn btn-sm btn-primary-outline wfid_login wfid_temp404031298 button" /></span
+                ><span class="wfid_temp404031330" style="display: inline-block"
+                  ><div class="myspinner wfid_temp404031362">
+                    <div
+                      class="wfid_temp404031394 spinner"
+                      style="display: none"
+                    >
+                      <img
+                        class="wfid_temp404031426 image"
+                        src="/lib/itx/priv/static/images/spinner.gif"
+                      />
+                    </div></div
+                ></span>
+              </div>
+            </div>
+            <div class="mycenter wfid_temp404031458" style="font-size: 0.9em">
+              <a
+                href="/login_trouble"
+                class="wfid_temp404031490 link"
+                data-ajax="false"
+                >Trouble logging in</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-8 wfid_temp404031522">
+            <div class="wfid_temp404031554" style="padding: 19px 29px 29px">
+              <div
+                class="blockquote wfid_temp404031586"
+                style="font-size: 1rem"
+              >
+                <p class="font-weight-bold wfid_temp404031618 p">
+                  Instructions
+                </p>
+              </div>
+              <div
+                class="blockquote wfid_temp404031650"
+                style="font-size: 1rem"
+              >
+                <p class="wfid_temp404031682 p" style="margin: 0px">
+                  <iframe
+                    src="https://drive.google.com/file/d/1sgPCXP4PtfmBwbG93Jvyo3xeawrfpTAu/preview"
+                    width="640"
+                    height="480"
+                    allow="autoplay"
+                  ></iframe>
+                </p>
+                <br class="wfid_temp404031714 br" />
+                <p class="wfid_temp404031746 p" style="margin: 0px">
+                  Online Examination 2022
+                </p>
+                <br class="wfid_temp404031778 br" />
+                <p class="wfid_temp404031810 p" style="margin: 0px">
+                  Timing 10:00AM to 6:00PM
+                </p>
+                <br class="wfid_temp404031842 br" />
+                <p class="wfid_temp404031874 p" style="margin: 0px">
+                  Helpline number: 020-71530202
+                </p>
+                <br class="wfid_temp404031906 br" />
+                <p class="wfid_temp404031938 p" style="margin: 0px">
+                  <a
+                    href="https://www.youtube.com/watch?v=Kl2VLU3kgDs"
+                    target="_blank"
+                    >Link to webcam error resolution video for Android
+                    devices</a
+                  >
+                </p>
+                <br class="wfid_temp404031970 br" />
+                <p class="wfid_temp404032002 p" style="margin: 0px">
+                  <a
+                    href="https://www.youtube.com/watch?v=RQ9lNr9VVhw"
+                    target="_blank"
+                    >Link to webcam error resolution video</a
+                  >
+                </p>
+                <br class="wfid_temp404032034 br" />
+                <p class="wfid_temp404032066 p" style="margin: 0px">
+                  <a href="https://sppuexam.in/cameratest" target="_blank"
+                    >Link to webcam testing</a
+                  >
+                </p>
+                <br class="wfid_temp404032098 br" />
+                <p class="wfid_temp404032130 p" style="margin: 0px">
+                  Username is your PRN number & Password given by university
+                  must be entered while login.
+                </p>
+                <br class="wfid_temp404032162 br" />
+                <p class="wfid_temp404032194 p" style="margin: 0px">
+                  युजरनेम हा तुमचा पीआरएन नंबर आहे आणि युनिव्हर्सिटीने दिलेला
+                  पासवर्ड लॉगिनकरण्यासाठीवापरावा.
+                </p>
+                <br class="wfid_temp404032226 br" />
+                <p class="wfid_temp404032258 p" style="margin: 0px">
+                  (You can get your username and password from
+                  <a
+                    href="https://sps.unipune.ac.in/"
+                    target="_blank"
+                    class="font-weight-bold"
+                    >https://sps.unipune.ac.in/</a
+                  >)
+                </p>
+                <br class="wfid_temp404032290 br" />
+                <p class="wfid_temp404032322 p" style="margin: 0px">
+                  <a
+                    href="https://drive.google.com/file/d/1IEq36RiAO_fZZs7zPZfsxRFnYGp1ESgu/view?usp=sharing"
+                    target="_blank"
+                    >Link to user manual for online examination</a
+                  >
+                </p>
+                <br class="wfid_temp404032354 br" />
+                <p class="wfid_temp404032386 p" style="margin: 0px">
+                  <a
+                    href="https://www.youtube.com/watch?v=5gPAAxCIym8"
+                    target="_blank"
+                    >Link to online examination demo video</a
+                  >
+                </p>
+                <br class="wfid_temp404032418 br" />
+                <p class="wfid_temp404032450 p" style="margin: 0px">
+                  <span class="font-weight-bold"
+                    >Students will be able to login only after receiving
+                    SMS/EMAIL from SPPU</span
+                  >
+                </p>
+                <br class="wfid_temp404032482 br" />
+                <p class="wfid_temp404032514 p" style="margin: 0px">
+                  Requirements for online examination:
+                </p>
+                <br class="wfid_temp404032546 br" />
+                <p class="wfid_temp404032578 p" style="margin: 0px">
+                  1. Android phone, desktop, laptop (Windows/Linux/Mac) with
+                  working front camera as webcam.
+                </p>
+                <br class="wfid_temp404032610 br" />
+                <p class="wfid_temp404032642 p" style="margin: 0px">
+                  2. Please use an updated version of
+                  <a
+                    href="https://www.google.com/intl/en_in/chrome/"
+                    target="_blank"
+                    class="font-weight-bold"
+                    >Google Chrome</a
+                  >
+                  or
+                  <a
+                    href="https://www.mozilla.org/en-US/firefox/new/"
+                    target="_blank"
+                    class="font-weight-bold"
+                    >Mozilla Firefox</a
+                  >
+                  only.
+                </p>
+                <br class="wfid_temp404032674 br" />
+                <p class="wfid_temp404032706 p" style="margin: 0px">
+                  3. Please ensure a reliable internet connection.
+                </p>
+                <br class="wfid_temp404032738 br" />
+                <p class="wfid_temp404032770 p" style="margin: 0px">
+                  4. Please ensure your mobile or laptop is fully charged.
+                </p>
+                <br class="wfid_temp404032802 br" />
+                <p class="wfid_temp404032834 p" style="margin: 0px">
+                  5. Please keep required stationery handy with you (pencil,
+                  pen, rough sheet etc.)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            id="myModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            style="z-index: 9999"
+            class="modal fade"
+          >
+            <div role="document" class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                    class="close"
+                  >
+                    <span aria-hidden="true">&#215;</span>
+                  </button>
+                </div>
+                <div
+                  class="modal-body wfid_myModalBody wfid_temp404032866"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Nitrogen.$set_param(
+      "pageContext",
+      "I19ZajUmgAJfX2bsNLTsq7sP49pn1ExaS-vIG81Ei5hGy6VV3itqY_Rm0USTYGsb2XEn0e2XJhMul0MLLzRihseWHla11U0fy-kfbYP8LMx6sM7TZo0q55Z6o0k5AVvEEO8E5N-BKAwXavXVcvAyImFMSO84EAmptIA6ffXaKny0P09NCax7h4I79oGGY0ToPUzUnoEJhEtVtAdjpSUl_isZZL-BV9cfd3BxPrWf-oiaT38TIVmXLdzYWdV0GTwI0ZpgF3NSihA0ZZgeGm6ndKjoClZuR8gBCAn6nSCL3wMEAs9FrjUn_GhhcZFfVS07QRa3H5_SC8bdnYG13UMQfzQ-N6MvPbL7haoBFg0mLF9IqfHgRmC1DaI_FlxCbhhlLWjkbsDwYLumLR7pujqa8cGISnb0UISKGwHygF9Uj5XUTXyFIdeBlocNHOExOHOI5ua1LuqjDCA7DQcKMlKMdVHDiB4X3EQ6ElvspvcR_kZYg4VQTvuYoSw-DWBnF0ZBKQOWfjh2HoAojAv9f61Lx1qF05UkoxlEU5OTSnt08DYT997T-tRB2P-5UU3LALPKVE3ThHfywFROsuw0uyy1RlxGzdpaSaUmtLpcuO9xjQOomweapse6OU0cB3XbcfffdPeT7Kh5LrMBDp54P1204yaugBJrPC0UpKDn-C5QN21YI340jVlloFaRUsPRJejA8C4pQniH52Ul_TxmoE76HMkYdpvkPeJ8oBz8mWicsZMROTtTBavo18H20z7Azs_7S3MbXM94QD2rbvCYJPnioMuhaUQYhBZsvUUHgHeeF67aTo777jytRcrAWr5LDyOwEM-2RBWbTzGGqMkUdmDRgKfOe9nWjSKqU2WAeQ64Bd0TzXB1xwlWcEADLZCCLYebSg2sqUps-oGDC9nI1Q2h3VgCDECeMc_4T0DDQL4T55xa33O0jFpHWI0liFnzGo_Q0ZklpiugWq4SgW9tKCFryvf3dsNXbrMrAg7XZ86I_esvWGnfaOJJP-K-clkaL8GFkaZ5BYjvG3qVRmKCNJWC9sun5axWY5fn_3B2X0NllarjeCHA-vBOB-hDjUN0WVXUZcDzC14v8E-FZ4fxLmD11qkyxzv_KxFmUTLGnK2RFJXVudfE8EWlWdOUWl2ZG5KcFQrr7jtIKEszxlM_rfjzcBGgyM8Tsiv23aVapIxUphrJ2hIxOrvaqeQl78yHqCWJgSrfbVig8ov635SEQTRhycmfjubCQoTW-xXKic8IuEXpGcmIPo3jTiAWFCudnjwQnCh-qxvDTygHsRVpdGRunUN-rwSrXUm90eJozPPjKuUdb2hNPjv7TgFfFnBkKPA1CF7uabXL2zbXw7REuH95sK7x-QPq1NMNj16kO1PHkfpxr8Q_LJuSpp0VFfPr6wm_5zlgZ3sQ8JonUmO-SZ_w8StdKYVNJ-v48LLxrQvp4UuZpyNUXasW5QPGZSyqgzhjAoyGwBoAPrfOv920AnowScqV4IMAH9PhTH9PeYeusWhM--rmJHxihU7clSkCxMSSnKlviKflZ4mTGprMPbdkdV_uzrRqhXsRfYyCfc0Lt7iWTrQAzzDfDyrWTVtT5UXuZ9ndhM05_6xQX2ZUDCfL8CkoMZ892SvucfbRq9Rb4dIaLjsDSOh2ErCJMpSW7Gu6CGa0D9yqy2d5CvFxP68HKAP2H0YVhD0Rc9TfzSxu-DVJuXMLrYobif3D9y4cLCKjBoslVPLbwoI8jyiVNzqdNyCPXigAk288gU7DvXkQsWqBfSWzNw29abkpiJoQV6wFrAviernZG52rNBPccRGU8lI3BkuycjOaFp2c23O12Sq3vPgsecqCpShPexlRQxVL-v6bvbPhSzoasimlaqd6DOTtSYmgHbDdlIFdlNV025ooAl9Xenl6S-zJ-bMM57duAIhYhhRKpfMgUsquFmOstxaNKaX1CN_o0bR06xfD0FkK6mW64JsQCxsdzoFRK7LkNKOryw"
+    );
+
+    Nitrogen.$anchor("page", ".wfid_username");
+    document.temp404032898 = function () {
+      Nitrogen.$anchor("page", ".wfid_username");
+      Nitrogen.$anchor("page", ".wfid_username");
+      var v = Nitrogen.$add_validation(obj(".wfid_username"), {
+        validMessage: " ",
+        onlyOnBlur: true,
+        onlyOnSubmit: false,
+      });
+      v.group = ".wfid_login";
+    };
+    setTimeout("document.temp404032898(); document.temp404032898=null;", 100);
+    Nitrogen.$anchor("page", ".wfid_password_bcrypt");
+    document.temp404032930 = function () {
+      Nitrogen.$anchor("page", ".wfid_password_bcrypt");
+      Nitrogen.$anchor("page", ".wfid_password_bcrypt");
+      var v = Nitrogen.$add_validation(obj(".wfid_password_bcrypt"), {
+        validMessage: " ",
+        onlyOnBlur: true,
+        onlyOnSubmit: false,
+      });
+      v.group = ".wfid_login";
+    };
+    setTimeout("document.temp404032930(); document.temp404032930=null;", 100);
+    Nitrogen.$anchor("page", ".wfid_testsactive");
+    document.temp404032962 = function () {
+      Nitrogen.$anchor("page", ".wfid_testsactive");
+      Nitrogen.$anchor("page", ".wfid_testsactive");
+      var v = Nitrogen.$add_validation(obj(".wfid_testsactive"), {
+        validMessage: " ",
+        onlyOnBlur: true,
+        onlyOnSubmit: false,
+      });
+      v.group = ".wfid_login";
+    };
+    setTimeout("document.temp404032962(); document.temp404032962=null;", 100);
+    Nitrogen.$anchor(".wfid_temp404031042", ".wfid_temp404031042");
+    Nitrogen.$observe_event(
+      ".wfid_temp404031042",
+      ".wfid_temp404031042",
+      "keydown",
+      function (event) {
+        if (Nitrogen.$is_key_code(event, 13, false)) {
+          Nitrogen.$anchor(".wfid_temp404031042", ".wfid_temp404031042");
+          Nitrogen.$queue_event(
+            ".wfid_password_bcrypt",
+            null,
+            "FSwVZxLAxagfA5j_Xu3ksVR3iMIbKcpoi2nqxN5y2MmtzkV-27fBa6FIp3X7kWBHMjLLI0ZkL7QKzKGqZRqq6cBSci0vgCWY8KTOE8fBpSaBBpbigk6AwNNKRCDg1TrlAkydpAqPa7YMfcjk2bFWgbpiwWdKm3k3peKH5Y5IApvHxc7gq9mCFhQuXb9wftsHFafZdi6JdUTdKqVYSF_Nf9Q5v4ONYqzY3HbOqRlW3lYzgjJ6",
+            undefined
+          );
+          return false;
+        }
+      }
+    );
+    Nitrogen.$anchor(".wfid_temp404031202", ".wfid_temp404031202");
+    Nitrogen.$observe_event(
+      ".wfid_temp404031202",
+      ".wfid_temp404031202",
+      "click",
+      function (event) {
+        Nitrogen.$anchor(".wfid_temp404031202", ".wfid_temp404031202");
+        Nitrogen.$queue_event(
+          ".wfid_temp404031202",
+          null,
+          "7w1OE6NgE77wM9qpm7UOtyYhu9fa2jJpbce9XR6TfLEB9YkU7wHI-WHyN_Ji5DagAVYszbfU47FKkWvs6c-1u69IznhmXySHnOuJYWfGfM_YfEC1188u-1sn708irS31vLD0IxmECnumWmceCtsizhiyvvumuOYewTtUFEOjG7bF4__0D3qnCMsDJ7o-70jv7WYM88XP0ncQrEYq711GJ2nPV_nKf72Jz3kkmL__LQUFx-Uh",
+          undefined
+        );
+      }
+    );
+    Nitrogen.$anchor(".wfid_temp404031298", ".wfid_temp404031298");
+    Nitrogen.$observe_event(
+      ".wfid_temp404031298",
+      ".wfid_temp404031298",
+      "click",
+      function (event) {
+        Nitrogen.$anchor(".wfid_temp404031298", ".wfid_temp404031298");
+        Nitrogen.$queue_event(
+          ".wfid_login",
+          null,
+          "zxY9f9ziseDiiKlDAD1ROizkaXLec9Si2MLacGqYo81WLuaL651npTldi-FEigfgNj3yIND1m3wzveBSghxrcGEyrHhIRYqAaLB7dYgS8t4c51MOKfq0aLLovUQn5TG6QQ9mjMchGx-jlPeZolwjSuo6bJF7_kQuOFlqEzkMaCjaGK-H5N1n_89PsG9OvY56jwq_4A",
+          undefined
+        );
+      }
+    );
+  </script>
+  <div>
+    <script type="text/javascript">
+      var $zoho = $zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {
+        widgetcode:
+          "876e54d5eb432f75bfc84994f859181c3dd522d098f24c29214454349e0bb320ef23302696d752f4734e6bb1c824a7f9",
+        values: {},
+        ready: function () {},
+      };
+      var d = document;
+      s = d.createElement("script");
+      s.type = "text/javascript";
+      s.id = "zsiqscript";
+      s.defer = true;
+      s.src = "https://salesiq.zoho.com/widget";
+      t = d.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(s, t);
+      d.write("<div id='zsiqwidget'></div>");
+    </script>
+  </div>
+</body>
